@@ -1,0 +1,57 @@
+<%= form_for(@tune) do |f| %>
+  <% if @tune.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tune.errors.count, "error") %> prohibited this tune from being saved:</h2>
+
+      <ul>
+      <% @tune.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="form-group">
+    <%= f.label :source %><br>
+    <%= f.text_field :source, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :key %><br>
+    <%= f.text_field :key, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :tuning %><br>
+    <%= f.text_field :tuning, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :string %><br>
+    <%= f.text_field :string, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :status %><br>
+    <%= f.text_field :status, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :sourcerecording %><br>
+    <%= f.text_field :sourcerecording, class: "form-control" %>
+  </div>
+<div class="form-group">
+    <%= f.label :lessonrecording %><br>
+    <%= f.text_field :lessonrecording, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :transcription %><br>
+    <%= f.text_field :transcription, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :notes %><br>
+    <%= f.text_area :notes, class: "form-control" %>
+  </div>
+  <div class="actions">
+    <%= f.submit class: "btn btn-success" %>
+  </div>
+<% end %>

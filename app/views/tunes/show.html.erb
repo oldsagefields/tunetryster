@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tune.name %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @tune.source %>
+</p>
+
+<p>
+  <strong>Key:</strong>
+  <%= @tune.key %>
+</p>
+
+<p>
+  <strong>Tuning:</strong>
+  <%= @tune.tuning %>
+</p>
+
+<p>
+  <strong>String:</strong>
+  <%= @tune.string %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tune.status %>
+</p>
+
+<p>
+  <strong>Sourcerecording:</strong>
+  <%= @tune.sourcerecording %>
+</p>
+
+<p>
+  <strong>Lessonrecording:</strong>
+  <%= @tune.lessonrecording %>
+</p>
+
+<p>
+  <strong>Transcription:</strong>
+  <%= @tune.transcription %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @tune.notes %>
+</p>
+
+<%= link_to 'Edit', edit_tune_path(@tune), class: "btn btn-success" %> |
+<%= link_to 'Back', tunes_path, class: "btn btn-success" %>
