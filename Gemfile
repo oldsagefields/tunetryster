@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '~> 3.0.3.0'
-gem "paperclip", "~> 2.7"
+gem "paperclip", "~> 3.5.1"
 
 group :production do
 	gem 'pg'
